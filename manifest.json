@@ -1,0 +1,12 @@
+{
+  "name": "Sample Chrome Extension",
+  "description": "Remove Unnecessary Parts from Tabelog etc.",
+  "version": "0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://kabutan.jp/stock/?code=*"],
+      "js": ["content_script.js"]
+    }
+  ]
+}
