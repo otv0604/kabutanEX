@@ -22,16 +22,59 @@ var a4 =
 
 const h = document.getElementsByTagName("tr");
 console.log(h);
-
 const newh1 = document.createElement("td");
+const newh2 = document.createElement("td");
+const newh3 = document.createElement("td");
+const newh4 = document.createElement("td");
+if (a1 <= -5) {
+  newh1.style.color = "blue";
+  newh1.style.fontWeight = "bold";
+} else if (a1 < 0) {
+  newh1.style.color = "blue";
+} else if (a1 >= 5) {
+  newh1.style.fontWeight = "bold";
+  newh1.style.color = "red";
+} else if (a1 > 0) {
+  newh1.style.color = "red";
+}
+if (a2 <= -5) {
+  newh2.style.color = "blue";
+  newh2.style.fontWeight = "bold";
+} else if (a2 < 0) {
+  newh2.style.color = "blue";
+} else if (a2 >= 5) {
+  newh2.style.fontWeight = "bold";
+  newh2.style.color = "red";
+} else if (a2 > 0) {
+  newh2.style.color = "red";
+}
+if (a3 <= -5) {
+  newh3.style.color = "blue";
+  newh3.style.fontWeight = "bold";
+} else if (a3 < 0) {
+  newh3.style.color = "blue";
+} else if (a3 >= 5) {
+  newh3.style.fontWeight = "bold";
+  newh3.style.color = "red";
+} else if (a3 > 0) {
+  newh3.style.color = "red";
+}
+if (a4 <= -5) {
+  newh4.style.color = "blue";
+  newh4.style.fontWeight = "bold";
+} else if (a4 < 0) {
+  newh4.style.color = "blue";
+} else if (a4 >= 5) {
+  newh4.style.fontWeight = "bold";
+  newh4.style.color = "red";
+} else if (a4 > 0) {
+  newh4.style.color = "red";
+}
 newh1.textContent = a1 + "%";
 h[7].appendChild(newh1);
-const newh2 = document.createElement("td");
 newh2.textContent = a2 + "%";
 h[8].appendChild(newh2);
-const newh3 = document.createElement("td");
 newh3.textContent = a3 + "%";
 h[9].appendChild(newh3);
-const newh4 = document.createElement("td");
 newh4.textContent = a4 + "%";
 h[10].appendChild(newh4);
