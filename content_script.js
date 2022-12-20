@@ -6,16 +6,20 @@ var owarine = parseInt(li01[32].textContent.replaceAll(",", ""));
 var li02 = Array.from(document.getElementsByClassName("floatr"));
 var zen = parseInt(li02[0].textContent.replaceAll(",", ""));
 
-var n = 1;
+// 424スレ469レス
+function calcRatio(ohlc, zenzitu) {
+  var n = 1;
+  return (
+    Math.floor((((ohlc - zenzitu) * 100) / zen) * Math.pow(10, n)) /
+    Math.pow(10, n)
+  );
+}
+
 const a = [
-  Math.floor((((hajimene - zen) * 100) / zen) * Math.pow(10, n)) /
-    Math.pow(10, n),
-  Math.floor((((takane - zen) * 100) / zen) * Math.pow(10, n)) /
-    Math.pow(10, n),
-  Math.floor((((yasune - zen) * 100) / zen) * Math.pow(10, n)) /
-    Math.pow(10, n),
-  Math.floor((((owarine - zen) * 100) / zen) * Math.pow(10, n)) /
-    Math.pow(10, n),
+  calcRatio(hajimene, zen),
+  calcRatio(takane, zen),
+  calcRatio(yasune, zen),
+  calcRatio(owarine, zen),
 ];
 
 const h = document.getElementsByTagName("tr");
