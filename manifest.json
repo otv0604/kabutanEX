@@ -1,8 +1,8 @@
 {
-  "name": "Sample Chrome Extension",
-  "description": "Remove Unnecessary Parts from Tabelog etc.",
-  "version": "0.1",
-  "manifest_version": 3,
+  "name": "KabutanEXtension",
+  "description": "Make Kabutan Gorgeous Again.",
+  "version": "1.4",
+  "manifest_version": 2,
   "content_scripts": [
     {
       "matches": ["https://kabutan.jp/stock/?code=*"],
